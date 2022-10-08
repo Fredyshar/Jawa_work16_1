@@ -2,21 +2,22 @@ package ru.netology;
 
 
 import java.util.ArrayList;
+import java.util.HashMap;
 
 public class Game {
 
-    ArrayList<Player> players = new ArrayList<>();
+    HashMap<Player, Integer> players = new HashMap<>();
 
     public void register(Player player) {
         //реализация метода регистрации
-        players.add(player);
+        players.put(player, player.getStrength());
     }
 
     public byte round(String playerName1, String playerName2) {
         // написать метод соревнования м/у двумя игроками
         Player player1 = null;
         Player player2 = null;
-        for (Player player : players) {
+        for (Player player : players.keySet()) {
             if (player.getName().equals(playerName1)) {
                 player1 = player;
             }
