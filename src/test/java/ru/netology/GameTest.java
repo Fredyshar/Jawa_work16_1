@@ -25,6 +25,7 @@ public class GameTest {
         byte expected = 0;
         Assertions.assertEquals(actual, expected);
     }
+
     @Test
     public void firstPlayerNotRegistered() {                  //первый игрок не зарегестрирован
         Game game = new Game();
@@ -38,6 +39,7 @@ public class GameTest {
 //        byte actual = game.round("Superman", "Joker");
 //        System.out.println(actual);
     }
+
     @Test
     public void secondPlayerNotRegistered() {                  //второй игрок не зарегестрирован
         Game game = new Game();
@@ -51,6 +53,7 @@ public class GameTest {
 //        byte actual = game.round("Superman", "Joker");
 //        System.out.println(actual);
     }
+
     @Test
     public void twoPlayersNotRegistered() {                  //два игрока не зарегестрированы
         Game game = new Game();
@@ -63,6 +66,7 @@ public class GameTest {
 //        byte actual = game.round("Robin", "Joker");
 //        System.out.println(actual);
     }
+
     @Test
     public void strengthPlayersEqual() {                 //силы игроков равны
         Game game = new Game();
@@ -74,6 +78,7 @@ public class GameTest {
 
         Assertions.assertEquals(actual, expected);
     }
+
     @Test
     public void strengthPlayer1More() {                 //силы игрока 1 больше
         Game game = new Game();
@@ -85,6 +90,7 @@ public class GameTest {
 
         Assertions.assertEquals(actual, expected);
     }
+
     @Test
     public void strengthPlayer2More() {                 //силы игрока 2 больше
         Game game = new Game();

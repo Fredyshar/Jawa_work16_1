@@ -27,8 +27,8 @@ public class Game {
         if (player1 == null && player2 == null) {
             throw new NotRegisteredException(
                     "Player with name: " + playerName1 + " not registered "
-                    + " and " +
-                    "Player with name: " + playerName2 + " not registered "
+                            + " and " +
+                            "Player with name: " + playerName2 + " not registered "
             );
         }
         if (player1 == null) {
